@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.cvag.androidsegmentedctrllibrary.SegmentedButton
+        android:id="@+id/rankedPlaces"
+        android:alpha="0.8"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="16dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        app:borderColor="#483A60"
+        app:cornerRadius="13dp"
+        app:rippleColorChecked="#ffffff"
+        app:segmentColorChecked="#483A60"
+        app:spreadType="evenly"
+        app:textColor="#FFFFFF">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@fonts/gotham"
+            android:text="Nationwide" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@fonts/gotham"
+            android:text="Local" />
+    </com.cvag.androidsegmentedctrllibrary.SegmentedButton>
+
+</LinearLayout>

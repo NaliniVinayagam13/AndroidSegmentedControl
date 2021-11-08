@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_text_color">#3e3e3d</color>
+    <color name="default_text_color_checked">#ffffff</color>
+
+    <color name="default_segment_color">#5E50A1</color>
+    <color name="default_segment_color_checked">#E91E63</color>
+
+    <color name="default_ripple_color">#3F3949</color>
+    <color name="default_ripple_color_checked">#3F3949</color>
+
+    <color name="default_border_color">#483A60</color>
+</resources>
